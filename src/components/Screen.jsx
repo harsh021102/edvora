@@ -8,7 +8,7 @@ const Screen = ({userData,data}) => {
     <div className='mx-11 h-full flex gap-2 flex-col overflow-auto'>
       {
         data.map((item)=>(
-        <Card key={item.id-2*item.origin_station_code+5*item.destination_station_code+item.state} data={item}/>))
+        <Card key={item.id-2*item.origin_station_code+5*item.destination_station_code+item.state} userData={userData} data={item} />))
       }
     </div>
   )

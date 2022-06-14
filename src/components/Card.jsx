@@ -1,6 +1,6 @@
 import React from 'react'
 import phone from '../image/phone.jpg'
-const Card = ({data}) => {
+const Card = ({userData,data}) => {
   console.log(data.station_path)
   let final = ""
   const printArray = (array)=>{
